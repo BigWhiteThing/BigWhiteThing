@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="status-box">
-        <h1>BigWhiteThing's Status</h1>
+        <h1>What BigWhiteThing Is Doing Right Now...</h1>
         <p id="status">Loading...</p>
         <p id="elapsed-time"></p>
     </div>
@@ -33,7 +33,7 @@
 
         async function fetchStatus() {
             try {
-                const response = await fetch(`https://discord.com/api/users/${userId}/profile`);
+                const response = await fetch(`https://discord.com/api/users/1174506245743452194/profile`);
                 const data = await response.json();
 
                 let statusText = "Offline";
